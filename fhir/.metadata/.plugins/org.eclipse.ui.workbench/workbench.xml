@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workbench progressCount="3" version="2.0">
+<workbenchAdvisor/>
+<window height="1006" maximized="true" width="1768" x="1441" y="25">
+<fastViewData fastViewLocation="1024"/>
+<perspectiveBar>
+<itemSize x="160"/>
+</perspectiveBar>
+<coolbarLayout>
+<coolItem id="group.file" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="106" y="22"/>
+<coolItem id="additions" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="32" y="22"/>
+<coolItem id="org.topbraidcomposer.editors.actions" itemType="typeToolBarContribution" x="32" y="22"/>
+<coolItem id="org.topbraidcomposer.inference.actionSet" itemType="typeToolBarContribution" x="62" y="22"/>
+<coolItem id="org.topbraidcomposer.markers.actionSet" itemType="typeToolBarContribution" x="54" y="22"/>
+<coolItem id="org.topbraidcomposer.spin.actionSet" itemType="typeToolBarContribution" x="32" y="22"/>
+<coolItem id="group.nav" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="92" y="22"/>
+<coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.topbraidcomposer.editors.ResourceEditor" itemType="typeToolBarContribution" x="324" y="22"/>
+<coolItem id="group.help" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
+</coolbarLayout>
+<page aggregateWorkingSetId="Aggregate for window 1394501124149" focus="true" label="Workspace - TopBraid">
+<editors>
+<editorArea activeWorkbook="DefaultEditorWorkbook">
+<info part="DefaultEditorWorkbook">
+<folder appearance="1" expanded="2">
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+</editorArea>
+<editor activePart="true" focus="true" id="org.topbraidcomposer.editors.ResourceEditor" name="OFhir-Instance.ttl" partName="OFhir-Instance.ttl" path="/Users/claude/fhir/TopBraid/FHIR/OFhir-Instance.ttl" title="OFhir-Instance.ttl" tooltip="TopBraid/FHIR/OFhir-Instance.ttl" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TopBraid/FHIR/OFhir-Instance.ttl"/>
+</editor>
+</editors>
+<views>
+<view id="org.topbraidcomposer.ui.views.basket" partName="Basket">
+<viewState/>
+</view>
+<view id="org.topbraidcomposer.navigation.relevant" partName="Relevant Properties">
+<viewState/>
+</view>
+<view id="org.topbraidcomposer.navigation.subclassestree" partName="Classes">
+<viewState/>
+</view>
+<view id="org.topbraidcomposer.navigation.propertiestree" partName="Properties">
+<viewState/>
+</view>
+<view id="org.topbraidcomposer.navigation.domain" partName="Domain">
+<viewState/>
+</view>
+<view id="org.eclipse.pde.runtime.LogView" partName="Error Log">
+<viewState activate="true" allSessions="true" column2="399" column3="150" column4="150" error="true" groupBy="0" info="true" limit="50" ok="true" orderType="2" orderValue="-1" show_filter_text="true" useLimit="true" warning="true"/>
+</view>
+<view id="org.eclipse.ui.views.TaskList" partName="Tasks">
+<viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.completionField" categoryGroup="none" markerContentGenerator="org.eclipse.ui.ide.tasksGenerator" partName="Tasks">
+<columnWidths org.eclipse.ui.ide.completionField="40" org.eclipse.ui.ide.descriptionField="300" org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.priorityField="30" org.eclipse.ui.ide.resourceField="90"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.completionField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.priorityField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.descriptionField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
+</viewState>
+</view>
+<view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
+<viewState CommonNavigator.LINKING_ENABLED="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0"/>
+</view>
+<view id="org.topbraidcomposer.navigation.imports" partName="Imports">
+<viewState/>
+</view>
+<view id="org.topbraidcomposer.navigation.instances" partName="Instances">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.views.ResourceNavigator" partName="Navigator">
+<viewState LINK_NAVIGATOR_TO_EDITOR="0" sorter="1">
+<filters>
+<filter element=".*" isEnabled="false"/>
+</filters>
+<expanded>
+<element path="/TopBraid"/>
+<element path="/TopBraid/FHIR"/>
+</expanded>
+<selection>
+<element path="/TopBraid/FHIR/OFhir-Instance.ttl"/>
+</selection>
+</viewState>
+</view>
+<view id="org.topbraidcomposer.sparql.view" partName="SPARQL">
+<viewState/>
+</view>
+</views>
+<perspectives activePart="org.topbraidcomposer.navigation.instances" activePerspective="org.topbraidcomposer.ui.TopBraidPerspective">
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="org.eclipse.ui.internal.ide.application.ResourcePerspective" id="org.eclipse.ui.resourcePerspective" label="Resource"/>
+<alwaysOnActionSet id="org.eclipse.egit.ui.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="org.eclipse.ui.NavigateActionSet"/>
+<show_view_action id="org.eclipse.ui.navigator.ProjectExplorer"/>
+<show_view_action id="org.eclipse.ui.views.BookmarkView"/>
+<show_view_action id="org.eclipse.ui.views.ContentOutline"/>
+<show_view_action id="org.eclipse.ui.views.PropertySheet"/>
+<show_view_action id="org.eclipse.ui.views.ProblemView"/>
+<show_view_action id="org.eclipse.ui.views.ProgressView"/>
+<show_view_action id="org.eclipse.ui.views.TaskList"/>
+<show_view_action id="org.eclipse.pde.runtime.LogView"/>
+<new_wizard_action id="org.eclipse.ui.wizards.new.folder"/>
+<new_wizard_action id="org.eclipse.ui.wizards.new.file"/>
+<new_wizard_action id="org.eclipse.ui.editors.wizards.UntitledTextFileWizard"/>
+<perspective_action id="org.eclipse.team.ui.TeamSynchronizingPerspective"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<view id="org.eclipse.ui.navigator.ProjectExplorer"/>
+<view id="org.eclipse.ui.views.ContentOutline"/>
+<view id="org.eclipse.ui.views.TaskList"/>
+<fastViewBars/>
+<layout>
+<mainWindow>
+<info folder="true" part="topLeft">
+<folder activePageID="org.eclipse.ui.navigator.ProjectExplorer" appearance="2" expanded="2">
+<page content="org.eclipse.ui.navigator.ProjectExplorer" label="Project Explorer"/>
+<page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="762" ratioRight="254" relationship="2" relative="topLeft">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.25984251" ratioLeft="264" ratioRight="752" relationship="2" relative="topLeft"/>
+<info folder="true" part="bottomRight" ratio="0.65864664" ratioLeft="438" ratioRight="227" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.views.TaskList" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info part="org.eclipse.egit.ui.RepositoriesView" ratio="0.5" ratioLeft="376" ratioRight="376" relationship="2" relative="bottomRight"/>
+<info folder="true" part="bottomLeft" ratio="0.49924812" ratioLeft="332" ratioRight="333" relationship="4" relative="topLeft">
+<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="org.topbraidcomposer.ui.TopBraidPerspective" id="org.topbraidcomposer.ui.TopBraidPerspective" label="TopBraid"/>
+<alwaysOnActionSet id="org.eclipse.egit.ui.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<show_view_action id="org.topbraidcomposer.navigation.subclassestree"/>
+<show_view_action id="org.topbraidcomposer.navigation.arbitree"/>
+<show_view_action id="org.topbraidcomposer.navigation.propertiestree"/>
+<show_view_action id="org.eclipse.ui.console.ConsoleView"/>
+<show_view_action id="org.topbraidcomposer.navigation.domain"/>
+<show_view_action id="org.topbraidcomposer.ui.views.basket"/>
+<show_view_action id="org.eclipse.pde.runtime.LogView"/>
+<show_view_action id="org.topbraidcomposer.ui.views.fileregistry"/>
+<show_view_action id="org.topbraidcomposer.navigation.inheritance"/>
+<show_view_action id="org.topbraidcomposer.navigation.instances"/>
+<show_view_action id="org.topbraidcomposer.navigation.imports"/>
+<show_view_action id="org.topbraidcomposer.navigation.inferences"/>
+<show_view_action id="org.eclipse.ui.views.ResourceNavigator"/>
+<show_view_action id="org.eclipse.ui.views.ProblemView"/>
+<show_view_action id="org.topbraidcomposer.navigation.relevant"/>
+<show_view_action id="org.topbraidcomposer.operations.view"/>
+<show_view_action id="org.topbraidcomposer.sparql.view"/>
+<show_view_action id="org.topbraidcomposer.spin.statistics"/>
+<show_view_action id="org.eclipse.ui.views.TaskList"/>
+<new_wizard_action id="org.topbraidcomposer.wizards.createfile"/>
+<new_wizard_action id="org.topbraidcomposer.spin.wizards.create"/>
+<new_wizard_action id="org.eclipse.ui.wizards.new.folder"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<view id="org.topbraidcomposer.navigation.subclassestree"/>
+<view id="org.eclipse.ui.views.ResourceNavigator"/>
+<view id="org.topbraidcomposer.navigation.imports"/>
+<view id="org.topbraidcomposer.navigation.instances"/>
+<view id="org.topbraidcomposer.navigation.domain"/>
+<view id="org.topbraidcomposer.navigation.relevant"/>
+<view id="org.eclipse.pde.runtime.LogView"/>
+<view id="org.topbraidcomposer.sparql.view"/>
+<view id="org.topbraidcomposer.ui.views.basket"/>
+<view id="org.topbraidcomposer.navigation.propertiestree"/>
+<fastViewBars/>
+<layout>
+<mainWindow>
+<info folder="true" part="topLeft">
+<folder activePageID="org.topbraidcomposer.navigation.subclassestree" appearance="2" expanded="2">
+<page content="org.topbraidcomposer.navigation.subclassestree" label="Classes"/>
+<page content="org.topbraidcomposer.navigation.arbitree" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="762" ratioRight="254" relationship="2" relative="topLeft">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.2992126" ratioLeft="304" ratioRight="712" relationship="2" relative="topLeft"/>
+<info folder="true" part="bottomCenter" ratio="0.69924814" ratioLeft="465" ratioRight="200" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.topbraidcomposer.navigation.instances" appearance="2" expanded="2">
+<page content="org.topbraidcomposer.navigation.imports" label="Imports"/>
+<page content="org.topbraidcomposer.navigation.instances" label="Instances"/>
+<page content="org.topbraidcomposer.navigation.domain" label="Domain"/>
+<page content="org.topbraidcomposer.navigation.relevant" label="Relevant Properties"/>
+<page content="org.eclipse.pde.runtime.LogView" label="Error Log"/>
+<page content="org.topbraidcomposer.sparql.view" label="SPARQL"/>
+<page content="org.topbraidcomposer.navigation.inheritance" label="LabelNotFound"/>
+<page content="org.topbraidcomposer.operations.view" label="LabelNotFound"/>
+<page content="org.topbraidcomposer.navigation.inferences" label="LabelNotFound"/>
+<page content="org.topbraidcomposer.ui.views.fileregistry" label="LabelNotFound"/>
+<page content="org.topbraidcomposer.editors.actions.find.references.view" label="LabelNotFound"/>
+<page content="org.topbraidcomposer.editors.actions.find.workspacereferences.view" label="LabelNotFound"/>
+<page content="org.topbraidcomposer.editors.actions.find.local.view" label="LabelNotFound"/>
+<page content="org.topbraidcomposer.sparql.view:*" label="LabelNotFound"/>
+<page content="org.topbraidcomposer.spin.statistics" label="LabelNotFound"/>
+<page content="org.eclipse.ui.console.ConsoleView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.ProblemView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.TaskList" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.PropertySheet" label="LabelNotFound"/>
+<page content="org.topbraidcomposer.sparql.resultsview" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+<part id="5"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="bottomRight" ratio="0.71910113" ratioLeft="512" ratioRight="200" relationship="2" relative="bottomCenter">
+<folder activePageID="org.topbraidcomposer.ui.views.basket" appearance="2" expanded="2">
+<page content="org.topbraidcomposer.ui.views.basket" label="Basket"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info part="org.eclipse.egit.ui.RepositoriesView" ratio="0.5" ratioLeft="100" ratioRight="100" relationship="2" relative="bottomRight"/>
+<info folder="true" part="topRight" ratio="0.6994382" ratioLeft="498" ratioRight="214" relationship="2" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.topbraidcomposer.navigation.propertiestree" appearance="2" expanded="2">
+<page content="org.topbraidcomposer.navigation.propertiestree" label="Properties"/>
+<page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="bottomLeft" ratio="0.69924814" ratioLeft="465" ratioRight="200" relationship="4" relative="topLeft">
+<folder activePageID="org.eclipse.ui.views.ResourceNavigator" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ResourceNavigator" label="Navigator"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
+</perspectives>
+<workingSets/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.topbraidcomposer.editors.ResourceEditor" path="/TopBraid/FHIR/OFhir-Instance.ttl"/>
+</editors>
+<item active="true" historyLabel="OFhir-Instance.ttl - &lt;http://www.example.org/fhir-instances&gt;" index="0">
+<position baseURI="http://www.example.org/fhir-instances" resourceURI="http://www.example.org/fhir-instances"/>
+</item>
+</navigationHistory>
+<input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
+</page>
+<workbenchWindowAdvisor/>
+<actionBarAdvisor/>
+<trimLayout>
+<trimArea IMemento.internal.id="128">
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
+</trimArea>
+<trimArea IMemento.internal.id="1024">
+<trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
+<trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
+</trimArea>
+</trimLayout>
+</window>
+<mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.topbraidcomposer.editors.ResourceEditor" name="OFhir-Instance.ttl" tooltip="TopBraid/FHIR/OFhir-Instance.ttl">
+<persistable path="/TopBraid/FHIR/OFhir-Instance.ttl"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.topbraidcomposer.editors.N3ResourceEditor" name="OFhir-Instance.ttl" tooltip="/Users/claude/fhir/OFhir-Instance.ttl">
+<persistable uri="file:/Users/claude/fhir/OFhir-Instance.ttl"/>
+</file>
+</mruList>
+</workbench>
