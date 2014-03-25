@@ -48,9 +48,24 @@
 
 
 
+###  http://fhir.hl7.org/v12#author
+
+<http://fhir.hl7.org/v12#author> rdf:type :ObjectProperty ;
+                                 
+                                 rdfs:comment """I think we should use Dublin Core
+""" .
+
+
+
 ###  http://fhir.hl7.org/v12#careProvider
 
 <http://fhir.hl7.org/v12#careProvider> rdf:type :ObjectProperty .
+
+
+
+###  http://fhir.hl7.org/v12#code
+
+<http://fhir.hl7.org/v12#code> rdf:type :ObjectProperty .
 
 
 
@@ -63,6 +78,12 @@
 ###  http://fhir.hl7.org/v12#communication
 
 <http://fhir.hl7.org/v12#communication> rdf:type :ObjectProperty .
+
+
+
+###  http://fhir.hl7.org/v12#created
+
+<http://fhir.hl7.org/v12#created> rdf:type :ObjectProperty .
 
 
 
@@ -137,6 +158,15 @@
 ###  http://fhir.hl7.org/v12#photo
 
 <http://fhir.hl7.org/v12#photo> rdf:type :ObjectProperty .
+
+
+
+###  http://fhir.hl7.org/v12#subject
+
+<http://fhir.hl7.org/v12#subject> rdf:type :ObjectProperty ;
+                                  
+                                  rdfs:comment """I think we should use Dublin Core
+""" .
 
 
 
@@ -350,6 +380,12 @@
 ###  http://fhir.hl7.org/v12#code
 
 <http://fhir.hl7.org/v12#code> rdf:type :DatatypeProperty .
+
+
+
+###  http://fhir.hl7.org/v12#created
+
+<http://fhir.hl7.org/v12#created> rdf:type :DatatypeProperty .
 
 
 
@@ -623,12 +659,12 @@
                                rdfs:subClassOf <http://fhir.hl7.org/v12#String> ,
                                                [ rdf:type :Restriction ;
                                                  :onProperty <http://fhir.hl7.org/v12#value> ;
-                                                 :minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                 :maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                                  :onDataRange xsd:string
                                                ] ,
                                                [ rdf:type :Restriction ;
                                                  :onProperty <http://fhir.hl7.org/v12#value> ;
-                                                 :maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                 :minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                                  :onDataRange xsd:string
                                                ] .
 
@@ -640,13 +676,13 @@
                                           
                                           rdfs:subClassOf <http://fhir.hl7.org/v12#ComplexClinicalDataType> ,
                                                           [ rdf:type :Restriction ;
-                                                            :onProperty <http://fhir.hl7.org/v12#coding> ;
-                                                            :allValuesFrom <http://fhir.hl7.org/v12#Coding>
-                                                          ] ,
-                                                          [ rdf:type :Restriction ;
                                                             :onProperty <http://fhir.hl7.org/v12#text> ;
                                                             :maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                                             :onDataRange xsd:string
+                                                          ] ,
+                                                          [ rdf:type :Restriction ;
+                                                            :onProperty <http://fhir.hl7.org/v12#coding> ;
+                                                            :allValuesFrom <http://fhir.hl7.org/v12#Coding>
                                                           ] ;
                                           
                                           :disjointWith <http://fhir.hl7.org/v12#Coding> ,
@@ -660,6 +696,11 @@
                                  
                                  rdfs:subClassOf <http://fhir.hl7.org/v12#ComplexClinicalDataType> ,
                                                  [ rdf:type :Restriction ;
+                                                   :onProperty <http://fhir.hl7.org/v12#system> ;
+                                                   :maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                   :onDataRange xsd:anyURI
+                                                 ] ,
+                                                 [ rdf:type :Restriction ;
                                                    :onProperty <http://fhir.hl7.org/v12#version> ;
                                                    :maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                                    :onDataRange xsd:string
@@ -670,16 +711,6 @@
                                                    :onDataRange xsd:string
                                                  ] ,
                                                  [ rdf:type :Restriction ;
-                                                   :onProperty <http://fhir.hl7.org/v12#primary> ;
-                                                   :maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                   :onDataRange xsd:string
-                                                 ] ,
-                                                 [ rdf:type :Restriction ;
-                                                   :onProperty <http://fhir.hl7.org/v12#system> ;
-                                                   :maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                   :onDataRange xsd:anyURI
-                                                 ] ,
-                                                 [ rdf:type :Restriction ;
                                                    :onProperty <http://fhir.hl7.org/v12#display> ;
                                                    :maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                                    :onDataRange xsd:string
@@ -688,6 +719,11 @@
                                                    :onProperty <http://fhir.hl7.org/v12#valueSet> ;
                                                    :onClass <http://fhir.hl7.org/v12#ValueSet> ;
                                                    :maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+                                                 ] ,
+                                                 [ rdf:type :Restriction ;
+                                                   :onProperty <http://fhir.hl7.org/v12#primary> ;
+                                                   :maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                   :onDataRange xsd:string
                                                  ] ;
                                  
                                  :disjointWith <http://fhir.hl7.org/v12#Extension> .
@@ -789,15 +825,6 @@
                                     
                                     rdfs:subClassOf <http://fhir.hl7.org/v12#ComplexClinicalDataType> ,
                                                     [ rdf:type :Restriction ;
-                                                      :onProperty <http://fhir.hl7.org/v12#url> ;
-                                                      :qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                      :onDataRange xsd:anyURI
-                                                    ] ,
-                                                    [ rdf:type :Restriction ;
-                                                      :onProperty <http://fhir.hl7.org/v12#extension> ;
-                                                      :allValuesFrom <http://fhir.hl7.org/v12#Extension>
-                                                    ] ,
-                                                    [ rdf:type :Restriction ;
                                                       :onProperty <http://fhir.hl7.org/v12#ExtensionObjectValue> ;
                                                       :onClass <http://fhir.hl7.org/v12#ExtensibleFhirElement> ;
                                                       :minQualifiedCardinality "0"^^xsd:nonNegativeInteger
@@ -806,6 +833,15 @@
                                                       :onProperty <http://fhir.hl7.org/v12#ExtensionObjectValue> ;
                                                       :onClass <http://fhir.hl7.org/v12#ExtensibleFhirElement> ;
                                                       :maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+                                                    ] ,
+                                                    [ rdf:type :Restriction ;
+                                                      :onProperty <http://fhir.hl7.org/v12#extension> ;
+                                                      :allValuesFrom <http://fhir.hl7.org/v12#Extension>
+                                                    ] ,
+                                                    [ rdf:type :Restriction ;
+                                                      :onProperty <http://fhir.hl7.org/v12#url> ;
+                                                      :qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                      :onDataRange xsd:anyURI
                                                     ] ;
                                     
                                     :disjointWith <http://fhir.hl7.org/v12#HumanName> ,
@@ -820,14 +856,31 @@
 
 
 
+###  http://fhir.hl7.org/v12#HumanAuthor
+
+<http://fhir.hl7.org/v12#HumanAuthor> rdf:type :Class ;
+                                      
+                                      rdfs:subClassOf <http://fhir.hl7.org/v12#Resource> .
+
+
+
 ###  http://fhir.hl7.org/v12#HumanName
 
 <http://fhir.hl7.org/v12#HumanName> rdf:type :Class ;
                                     
                                     rdfs:subClassOf <http://fhir.hl7.org/v12#ComplexClinicalDataType> ,
                                                     [ rdf:type :Restriction ;
+                                                      :onProperty <http://fhir.hl7.org/v12#family> ;
+                                                      :allValuesFrom xsd:string
+                                                    ] ,
+                                                    [ rdf:type :Restriction ;
                                                       :onProperty <http://fhir.hl7.org/v12#suffix> ;
                                                       :allValuesFrom xsd:string
+                                                    ] ,
+                                                    [ rdf:type :Restriction ;
+                                                      :onProperty <http://fhir.hl7.org/v12#text> ;
+                                                      :maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                      :onDataRange xsd:string
                                                     ] ,
                                                     [ rdf:type :Restriction ;
                                                       :onProperty <http://fhir.hl7.org/v12#given> ;
@@ -841,15 +894,6 @@
                                                       :onProperty <http://fhir.hl7.org/v12#use> ;
                                                       :onClass <http://fhir.hl7.org/v12#Code> ;
                                                       :maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
-                                                    ] ,
-                                                    [ rdf:type :Restriction ;
-                                                      :onProperty <http://fhir.hl7.org/v12#family> ;
-                                                      :allValuesFrom xsd:string
-                                                    ] ,
-                                                    [ rdf:type :Restriction ;
-                                                      :onProperty <http://fhir.hl7.org/v12#text> ;
-                                                      :maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                      :onDataRange xsd:string
                                                     ] .
 
 
@@ -902,6 +946,14 @@
 
 
 
+###  http://fhir.hl7.org/v12#MyUniqueClinicalResource
+
+<http://fhir.hl7.org/v12#MyUniqueClinicalResource> rdf:type :Class ;
+                                                   
+                                                   rdfs:subClassOf <http://fhir.hl7.org/v12#Other> .
+
+
+
 ###  http://fhir.hl7.org/v12#Oid
 
 <http://fhir.hl7.org/v12#Oid> rdf:type :Class ;
@@ -923,37 +975,53 @@
 
 
 
+###  http://fhir.hl7.org/v12#Other
+
+<http://fhir.hl7.org/v12#Other> rdf:type :Class ;
+                                
+                                rdfs:label "Other"^^xsd:string ;
+                                
+                                rdfs:subClassOf <http://fhir.hl7.org/v12#Resource> ,
+                                                [ rdf:type :Restriction ;
+                                                  :onProperty <http://fhir.hl7.org/v12#created> ;
+                                                  :someValuesFrom xsd:dateTime
+                                                ] ,
+                                                [ rdf:type :Restriction ;
+                                                  :onProperty <http://fhir.hl7.org/v12#author> ;
+                                                  :onClass <http://fhir.hl7.org/v12#HumanAuthor> ;
+                                                  :maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+                                                ] ,
+                                                [ rdf:type :Restriction ;
+                                                  :onProperty <http://fhir.hl7.org/v12#code> ;
+                                                  :onClass <http://fhir.hl7.org/v12#CodeableConcept> ;
+                                                  :qualifiedCardinality "1"^^xsd:nonNegativeInteger
+                                                ] ,
+                                                [ rdf:type :Restriction ;
+                                                  :onProperty <http://fhir.hl7.org/v12#identifier> ;
+                                                  :allValuesFrom <http://fhir.hl7.org/v12#Identifier>
+                                                ] ,
+                                                [ rdf:type :Restriction ;
+                                                  :onProperty <http://fhir.hl7.org/v12#subject> ;
+                                                  :onClass <http://fhir.hl7.org/v12#Resource> ;
+                                                  :maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+                                                ] ;
+                                
+                                rdfs:comment """FHIR Definition: Other is a conformant for handling resource concepts not yet defined for FHIR or outside HL7's scope of interest.
+
+OWL Definition: 'Other' represents an extension point for extended resources. That is,  in OWL, don't add attributes to 'Other' directly. Rather, subclass 'Other' and define the concept you wish to add explicitly in your extension ontology. All subclasses of Other are inferred to be extension concepts.
+
+NOTE: Avoid using 'Other' if the resource you are modeling already exists."""^^xsd:string .
+
+
+
 ###  http://fhir.hl7.org/v12#Patient
 
 <http://fhir.hl7.org/v12#Patient> rdf:type :Class ;
                                   
-                                  rdfs:subClassOf <http://fhir.hl7.org/v12#Resource> ,
+                                  rdfs:subClassOf <http://fhir.hl7.org/v12#HumanAuthor> ,
                                                   [ rdf:type :Restriction ;
-                                                    :onProperty <http://fhir.hl7.org/v12#isMultipleBirths> ;
-                                                    :minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
-                                                    :onDataRange xsd:boolean
-                                                  ] ,
-                                                  [ rdf:type :Restriction ;
-                                                    :onProperty <http://fhir.hl7.org/v12#careProvider> ;
-                                                    :allValuesFrom <http://fhir.hl7.org/v12#CareProvider>
-                                                  ] ,
-                                                  [ rdf:type :Restriction ;
-                                                    :onProperty <http://fhir.hl7.org/v12#managingOrganization> ;
-                                                    :onClass <http://fhir.hl7.org/v12#Organization> ;
-                                                    :maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
-                                                  ] ,
-                                                  [ rdf:type :Restriction ;
-                                                    :onProperty <http://fhir.hl7.org/v12#telecom> ;
-                                                    :someValuesFrom <http://fhir.hl7.org/v12#Contact>
-                                                  ] ,
-                                                  [ rdf:type :Restriction ;
-                                                    :onProperty <http://fhir.hl7.org/v12#photo> ;
-                                                    :allValuesFrom <http://fhir.hl7.org/v12#Attachment>
-                                                  ] ,
-                                                  [ rdf:type :Restriction ;
-                                                    :onProperty <http://fhir.hl7.org/v12#birthDate> ;
-                                                    :minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
-                                                    :onDataRange xsd:dateTimeStamp
+                                                    :onProperty <http://fhir.hl7.org/v12#identifier> ;
+                                                    :allValuesFrom <http://fhir.hl7.org/v12#Identifier>
                                                   ] ,
                                                   [ rdf:type :Restriction ;
                                                     :onProperty <http://fhir.hl7.org/v12#gender> ;
@@ -961,9 +1029,22 @@
                                                     :maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
                                                   ] ,
                                                   [ rdf:type :Restriction ;
+                                                    :onProperty <http://fhir.hl7.org/v12#managingOrganization> ;
+                                                    :onClass <http://fhir.hl7.org/v12#Organization> ;
+                                                    :maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+                                                  ] ,
+                                                  [ rdf:type :Restriction ;
+                                                    :onProperty <http://fhir.hl7.org/v12#photo> ;
+                                                    :allValuesFrom <http://fhir.hl7.org/v12#Attachment>
+                                                  ] ,
+                                                  [ rdf:type :Restriction ;
                                                     :onProperty <http://fhir.hl7.org/v12#maritalStatus> ;
                                                     :onClass <http://fhir.hl7.org/v12#CodeableConcept> ;
                                                     :maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+                                                  ] ,
+                                                  [ rdf:type :Restriction ;
+                                                    :onProperty <http://fhir.hl7.org/v12#careProvider> ;
+                                                    :allValuesFrom <http://fhir.hl7.org/v12#CareProvider>
                                                   ] ,
                                                   [ rdf:type :Restriction ;
                                                     :onProperty <http://fhir.hl7.org/v12#name> ;
@@ -975,45 +1056,18 @@
                                                     :onDataRange xsd:boolean
                                                   ] ,
                                                   [ rdf:type :Restriction ;
-                                                    :onProperty <http://fhir.hl7.org/v12#gender> ;
-                                                    :onClass <http://fhir.hl7.org/v12#CodeableConcept> ;
-                                                    :minQualifiedCardinality "0"^^xsd:nonNegativeInteger
-                                                  ] ,
-                                                  [ rdf:type :Restriction ;
-                                                    :onProperty <http://fhir.hl7.org/v12#multipleBirthCount> ;
-                                                    :maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                    :onDataRange xsd:boolean
-                                                  ] ,
-                                                  [ rdf:type :Restriction ;
-                                                    :onProperty <http://fhir.hl7.org/v12#communication> ;
-                                                    :allValuesFrom <http://fhir.hl7.org/v12#CodeableConcept>
-                                                  ] ,
-                                                  [ rdf:type :Restriction ;
-                                                    :onProperty <http://fhir.hl7.org/v12#maritalStatus> ;
-                                                    :onClass <http://fhir.hl7.org/v12#CodeableConcept> ;
-                                                    :minQualifiedCardinality "0"^^xsd:nonNegativeInteger
-                                                  ] ,
-                                                  [ rdf:type :Restriction ;
-                                                    :onProperty <http://fhir.hl7.org/v12#identifier> ;
-                                                    :allValuesFrom <http://fhir.hl7.org/v12#Identifier>
-                                                  ] ,
-                                                  [ rdf:type :Restriction ;
                                                     :onProperty <http://fhir.hl7.org/v12#address> ;
                                                     :allValuesFrom <http://fhir.hl7.org/v12#Address>
                                                   ] ,
                                                   [ rdf:type :Restriction ;
-                                                    :onProperty <http://fhir.hl7.org/v12#multipleBirthCount> ;
+                                                    :onProperty <http://fhir.hl7.org/v12#isMultipleBirths> ;
                                                     :minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
                                                     :onDataRange xsd:boolean
                                                   ] ,
                                                   [ rdf:type :Restriction ;
                                                     :onProperty <http://fhir.hl7.org/v12#birthDate> ;
-                                                    :maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                    :minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
                                                     :onDataRange xsd:dateTimeStamp
-                                                  ] ,
-                                                  [ rdf:type :Restriction ;
-                                                    :onProperty <http://fhir.hl7.org/v12#active> ;
-                                                    :maxCardinality "1"^^xsd:nonNegativeInteger
                                                   ] ,
                                                   [ rdf:type :Restriction ;
                                                     :onProperty <http://fhir.hl7.org/v12#managingOrganization> ;
@@ -1021,14 +1075,51 @@
                                                     :minQualifiedCardinality "0"^^xsd:nonNegativeInteger
                                                   ] ,
                                                   [ rdf:type :Restriction ;
+                                                    :onProperty <http://fhir.hl7.org/v12#birthDate> ;
+                                                    :maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                    :onDataRange xsd:dateTimeStamp
+                                                  ] ,
+                                                  [ rdf:type :Restriction ;
+                                                    :onProperty <http://fhir.hl7.org/v12#multipleBirthCount> ;
+                                                    :maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                    :onDataRange xsd:boolean
+                                                  ] ,
+                                                  [ rdf:type :Restriction ;
                                                     :onProperty <http://fhir.hl7.org/v12#isMultipleBirths> ;
                                                     :maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                                     :onDataRange xsd:boolean
                                                   ] ,
                                                   [ rdf:type :Restriction ;
+                                                    :onProperty <http://fhir.hl7.org/v12#gender> ;
+                                                    :onClass <http://fhir.hl7.org/v12#CodeableConcept> ;
+                                                    :minQualifiedCardinality "0"^^xsd:nonNegativeInteger
+                                                  ] ,
+                                                  [ rdf:type :Restriction ;
+                                                    :onProperty <http://fhir.hl7.org/v12#maritalStatus> ;
+                                                    :onClass <http://fhir.hl7.org/v12#CodeableConcept> ;
+                                                    :minQualifiedCardinality "0"^^xsd:nonNegativeInteger
+                                                  ] ,
+                                                  [ rdf:type :Restriction ;
+                                                    :onProperty <http://fhir.hl7.org/v12#communication> ;
+                                                    :allValuesFrom <http://fhir.hl7.org/v12#CodeableConcept>
+                                                  ] ,
+                                                  [ rdf:type :Restriction ;
+                                                    :onProperty <http://fhir.hl7.org/v12#multipleBirthCount> ;
+                                                    :minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                                    :onDataRange xsd:boolean
+                                                  ] ,
+                                                  [ rdf:type :Restriction ;
+                                                    :onProperty <http://fhir.hl7.org/v12#active> ;
+                                                    :maxCardinality "1"^^xsd:nonNegativeInteger
+                                                  ] ,
+                                                  [ rdf:type :Restriction ;
                                                     :onProperty <http://fhir.hl7.org/v12#isDeceased> ;
                                                     :minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
                                                     :onDataRange xsd:boolean
+                                                  ] ,
+                                                  [ rdf:type :Restriction ;
+                                                    :onProperty <http://fhir.hl7.org/v12#telecom> ;
+                                                    :someValuesFrom <http://fhir.hl7.org/v12#Contact>
                                                   ] ;
                                   
                                   :disjointWith <http://fhir.hl7.org/v12#Practitioner> ,
@@ -1059,9 +1150,19 @@
 <http://fhir.hl7.org/v12#Practitioner> rdf:type :Class ;
                                        
                                        rdfs:subClassOf <http://fhir.hl7.org/v12#CareProvider> ,
-                                                       <http://fhir.hl7.org/v12#Resource> ;
+                                                       <http://fhir.hl7.org/v12#HumanAuthor> ;
                                        
                                        :disjointWith <http://fhir.hl7.org/v12#ValueSet> .
+
+
+
+###  http://fhir.hl7.org/v12#Profile
+
+<http://fhir.hl7.org/v12#Profile> rdf:type :Class ;
+                                  
+                                  rdfs:subClassOf <http://fhir.hl7.org/v12#Resource> ;
+                                  
+                                  rdfs:comment "Not sure this should be modeled this way. It is a starting point for now."^^xsd:string .
 
 
 
@@ -1094,6 +1195,14 @@
 <http://fhir.hl7.org/v12#RatioDataTypes> rdf:type :Class ;
                                          
                                          rdfs:subClassOf <http://fhir.hl7.org/v12#ComplexClinicalDataType> .
+
+
+
+###  http://fhir.hl7.org/v12#RelatedPerson
+
+<http://fhir.hl7.org/v12#RelatedPerson> rdf:type :Class ;
+                                        
+                                        rdfs:subClassOf <http://fhir.hl7.org/v12#HumanAuthor> .
 
 
 
