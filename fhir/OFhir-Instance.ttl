@@ -103,6 +103,15 @@ fhir-instance:Patient-1 rdf:type fhir:Patient ,
 
 
 
+###  http://www.example.org/fhir-instances#SomeExtensibleString
+
+fhir-instance:SomeExtensibleString rdf:type fhir:String ,
+                                            owl:NamedIndividual ;
+                                   
+                                   fhir:value "01"^^xsd:byte .
+
+
+
 [ rdf:type fhir:CodeableConcept ;
   fhir:coding [ rdf:type fhir:Coding ;
                 fhir:display "Male" ;
