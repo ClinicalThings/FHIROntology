@@ -2,6 +2,6 @@
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <uri id="User Entered Import Resolution" name="http://fhir.hl7.org/v12" uri="OFhir.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1398179805410" name="http://clinicalthings.org/ont/fhir/v12" uri="OFhir.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1416932800488" name="http://clinicalthings.org/ont/fhir/v12" uri="OFhir.owl"/>
     </group>
 </catalog>

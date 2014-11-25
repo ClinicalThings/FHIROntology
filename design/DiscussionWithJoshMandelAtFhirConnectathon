@@ -1,0 +1,4 @@
+Add restriction on extension element at the ExtensibleDataElement level.
+Can one make a datatype property equivalent to an object property (eye color = brown vs String.value = brown)
+Add a relationship between coding and the terminology (e.g., SNOMED)
+Think whether 'Condition is an instance of' SNOMED code should be considered as part of the core ontology (would require importing SNOMED). Probably best done in an ontology extension.
